@@ -1,0 +1,12 @@
+{
+  "title": "Personal pre-departure checklist",
+  "disclaimer": "Personal planning notes only — not official visa or immigration advice.",
+  "tasks": [
+    { "id": "passport", "label": "Passport valid for travel window", "done": false },
+    { "id": "ticket", "label": "Return or onward ticket drafted", "done": false },
+    { "id": "funds", "label": "Proof-of-funds notes prepared", "done": false },
+    { "id": "insurance", "label": "Travel insurance researched", "done": false },
+    { "id": "entry", "label": "Entry paperwork reminders collected", "done": false },
+    { "id": "health", "label": "Health / vaccination notes reviewed", "done": false }
+  ]
+}

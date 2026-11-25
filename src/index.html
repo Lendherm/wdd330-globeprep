@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GlobePrep helps you explore destination countries for travel and visa prep research."
+    />
+    <title>GlobePrep | Explore Destinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html">Globe<span>Prep</span></a>
+      <nav>
+        <a href="./index.html" aria-current="page">Explore</a>
+        <a href="./saved.html">My Trips</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Explore destinations</h1>
+        <p>
+          Search countries, filter by region, and start travel prep research with
+          live data from REST Countries.
+        </p>
+        <label class="search-label" for="search">
+          Search by country or capital
+          <input
+            id="search"
+            type="search"
+            placeholder="e.g. Mexico, Tokyo, Canada"
+            autocomplete="off"
+          />
+        </label>
+      </section>
+
+      <section class="filters" aria-label="Region filters">
+        <button type="button" class="pill active" data-region="all">All</button>
+        <button type="button" class="pill" data-region="Americas">Americas</button>
+        <button type="button" class="pill" data-region="Europe">Europe</button>
+        <button type="button" class="pill" data-region="Asia">Asia</button>
+        <button type="button" class="pill" data-region="Africa">Africa</button>
+        <button type="button" class="pill" data-region="Oceania">Oceania</button>
+      </section>
+
+      <p id="status" class="status" role="status">Loading countries…</p>
+      <section id="cards" class="cards" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer">
+      <p>WDD 330 Final Project · Data via REST Countries</p>
+    </footer>
+  </body>
+</html>
